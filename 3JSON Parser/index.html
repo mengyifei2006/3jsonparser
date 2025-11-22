@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON Validator & Formatter - Free Online Tool</title>
+    <meta name="description" content="Validate, format, and &quot;pretty-print&quot; your JSON data instantly. Our free online JSON validator helps you find errors and make your JSON readable.">
+    <link rel="stylesheet" href="style.css">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BV0YKP4BZX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-BV0YKP4BZX');
+    </script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1336697940295449" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Free Online JSON Validator & Formatter</h1>
+
+        <div class="tool">
+            <div class="buttons">
+                <button id="validate-format">VALIDATE & FORMAT</button>
+                <button id="copy">Copy to Clipboard</button>
+                <button id="clear">Clear</button>
+            </div>
+            <textarea id="json-input" placeholder="Paste your JSON here..." style="height: 400px;"></textarea>
+            <div id="status-message"></div>
+        </div>
+
+        <div class="content">
+            <h2>How to Use This JSON Validator & Formatter</h2>
+            <ol>
+                <li>Paste your JSON code into the text area above.</li>
+                <li>Click the "VALIDATE & FORMAT" button.</li>
+                <li>If your JSON is valid, the text area will be updated with the "pretty-printed" (indented) version.</li>
+                <li>If your JSON is invalid, a red error message will appear below the buttons, telling you what went wrong.</li>
+            </ol>
+
+            <h2>What is JSON?</h2>
+            <p>JSON (JavaScript Object Notation) is a lightweight data-interchange format. It is easy for humans to read and write and easy for machines to parse and generate. It is based on a subset of the JavaScript Programming Language, Standard ECMA-262 3rd Edition - December 1999. JSON is a text format that is completely language independent but uses conventions that are familiar to programmers of the C-family of languages, including C, C++, C#, Java, JavaScript, Perl, Python, and many others. These properties make JSON an ideal data-interchange language.</p>
+
+            <h2>What is a JSON Validator?</h2>
+            <p>A JSON validator is a tool that checks if a given string follows the JSON format syntax. It ensures that the structure and values are correct according to the JSON specification. This is crucial for data exchange between a server and a web application, as the data must be correctly formatted to be parsed and used by the receiving application (e.g., in Python, Java, or JavaScript).</p>
+            <p>The validator catches common mistakes, saving developers significant time debugging issues related to data transfer and configuration files.</p>
+
+            <h2>Common JSON Syntax Errors</h2>
+            <ul>
+                <li><strong>Trailing Commas:</strong> Adding a comma after the last element in an array or the last property in an object. <code>[1, 2, 3,]</code> or <code>{"a":1, "b":2,}</code> are invalid.</li>
+                <li><strong>Using Single Quotes:</strong> JSON keys and string values must be enclosed in double quotes ("). <code>{'key': 'value'}</code> is invalid. It must be <code>{"key": "value"}</code>.</li>
+                <li><strong>Missing Commas:</strong> Forgetting to place a comma between elements in an array or properties in an object.</li>
+                <li><strong>Mismatched Brackets:</strong> Not closing an object with a curly brace <code>}</code> or an array with a square bracket <code>]</code>.</li>
+            </ul>
+
+            <h2>JSON Validator FAQ</h2>
+            <h3>Is this tool free?</h3>
+            <p>Yes, this online JSON validator and formatter is 100% free.</p>
+            <h3>Is my data safe?</h3>
+            <p>Yes, your data is completely safe. All validation and formatting logic runs locally in your web browser using JavaScript. Your data is never sent or uploaded to our server.</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
