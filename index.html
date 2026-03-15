@@ -163,6 +163,8 @@
             100%  {opacity: 1; transform: translateY(0)}
         }
     </style>
+    <script>(function(s){s.dataset.zone='10735875',s.src='https://al5sm.com/tag.min.js'})([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')))</script>
+    <script>(function(s){s.dataset.zone='10735876',s.src='https://nap5k.com/tag.min.js'})([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')))</script>
 </head>
 <body class="aurora-bg text-slate-800 min-h-screen flex flex-col font-sans selection:bg-indigo-100 selection:text-indigo-700">
 
@@ -589,14 +591,19 @@
         inputEl.addEventListener('scroll', syncScroll);
         
         // Button Events
-        btnFormat.addEventListener('click', format);
-        btnMinify.addEventListener('click', minify);
-        btnFix.addEventListener('click', fix);
-        btnCopy.addEventListener('click', copyToClipboard);
+        btnFormat.addEventListener('click', function() { format(); triggerAd(); });
+        btnMinify.addEventListener('click', function() { minify(); triggerAd(); });
+        btnFix.addEventListener('click', function() { fix(); triggerAd(); });
+        btnCopy.addEventListener('click', function() { copyToClipboard(); triggerAd(); });
         btnClear.addEventListener('click', clearAll);
 
         // Initial setup
         updateLineNumbers();
+
+        // Ad trigger function
+        window.triggerAd = function() {
+            window.open('https://omg10.com/4/10735853', '_blank');
+        };
     </script>
 </body>
 </html>
